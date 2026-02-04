@@ -81,3 +81,28 @@ h1 {
     margin-left: 15px;
     margin-top: 50%;
 }
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin: 10px 0 0 15px;
+    cursor: pointer;
+    
+}
+
+span {
+    color: #000000;
+    vertical-align: sub;
+}
+
+.uxui {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 310px;
+}   
