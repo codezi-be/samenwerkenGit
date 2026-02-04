@@ -18,7 +18,7 @@
 }
 
 .nav>a {
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     color: black;
 }
@@ -46,7 +46,7 @@
 }
 
 .greenBlok {
-    width: 50%;
+    width: 45%;
     height: 50vh;
     background-color: rgba(6, 249, 184, 0.600);
     z-index: 1;
@@ -56,10 +56,28 @@
 }
 
 .blackBlok {
-    width: 50%;
+    width: 55%;
     height: 50vh;
     background-color: rgba(0, 0, 0, 0.700);
     z-index: 2;
     position: absolute;
     top: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.blackBlok h1 {
+    text-align: end;
+    margin-right: 15px;
+    margin-top: 41%;
+    color: #ffffff;
+}
+
+.greenBlok h1 {
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 50%;
 }
