@@ -360,5 +360,157 @@ span {
     }
 }
 
+/*Vanaf hier begint style.css voor Esad/Portfolio*/
+
+.portfolio{
+    padding: 90px 0;
+}
+
+.portfolio-head{
+
+
+
+    position: relative;
+    margin-bottom: 40px;
+
+
+    
+}
+
+.portfolio-line{
+
+
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 2px;
+    height: 80px;
+    background: #06f9b7;
+
+
+
+
+}
+
+/*de titell*/
+.portfolio-title{
+    margin: 0 0 15px;
+    font-size: 56px;
+
+    font-weight: 800;
+}
+
+.portfolio-title span{
+    color: #06f9b7;
+}
+
+/* P */
+.portfolio-text{
+    max-width: 720px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6f6f6f;
+    margin-bottom: 25px;
+
+
+
+
+}
+
+/* filt */
+.portfolio-filters{
+    display: flex;
+    gap: 30px;
+
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.portfolio-filters a{
+    text-decoration: none;
+    color: #222;
+
+
+}
+
+.portfolio-filters a.active{
+    color: #06f9b7;
+
+}
+
+/* grid */
+.portfolio-grid{
+    gap: 0;
+
+}
+
+.portfolio-item{
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+
+/* overlay */
+.portfolio-item.featured .overlay{
+
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+.portfolio-item.featured .overlay::before{
+    
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 40%;
+    background: #06f9b7;
+}
+
+.portfolio-item.featured .overlay::after{
+    
+    position: absolute;
+    inset: auto 0 40% 0;
+    height: 30%;
+    background: rgba(6,249,183,0.35);
+    clip-path: polygon(0 100%, 100% 30%, 100% 100%, 0 100%);
+}
+
+/* tekst en btn */
+.overlay p{
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.plus{
+    position: relative;
+    z-index: 2;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15);
+}
 
 
