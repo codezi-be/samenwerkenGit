@@ -1,4 +1,5 @@
 @import "myFramework.css";
+@import "myFramework.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
@@ -19,6 +20,118 @@ body{
     background-color: #f8fafa;
 }
 
+
+/* vanaf hier komt de css voor de section about ! (Esad)*/
+
+.about{
+    padding: 90px 0 80px;
+    background: #fff;
+}
+
+/* titel */
+.about__title{
+    margin: 0 0 12px;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+}
+.about__title span{
+    color: #06f9b7;
+}
+
+/* intro tekst */
+.about__text{
+    margin: 0 0 55px;
+    max-width: 760px;
+    color: #6f6f6f;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* items rij */
+.about__items{
+    row-gap: 40px;
+}
+
+/* belangrijk: alles links zoals voorbeeld */
+.about-item{
+    text-align: left;
+}
+
+/* icoon + lijn naast elkaar */
+.about-item__top{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.about-item__icon{
+    font-size: 54px;
+    color: #222;
+}
+
+/* groene lijn */
+.about-item__line{
+    height: 4px;
+    width: 140px;
+    background: #06f9b7;
+    display: inline-block;
+}
+
+/* titels */
+.about-item__title{
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    color: #222;
+}
+
+/*    beschrijving: korter blokje */
+.about-item__desc{
+    margin: 0;
+    max-width: 240px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.about-item__desc a{
+    color: #06f9b7;
+    font-weight: 700;
+    text-decoration: none;
+}
+.about-item__desc a:hover{
+    text-decoration: underline;
+}
+
+/* rechter verticale tekst */
+.about__side{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about__vertical{
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+/* op kleinere schermen: verticale tekst onderaan en normaal */
+@media (max-width: 991px){
+    .about__side{
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    .about__vertical{
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+}
 .nav {
     text-align: end;
 }
@@ -134,4 +247,115 @@ span {
     margin-left: -80px;
 }
 
+}
+/* vanaf hier komt de css voor de section about ! (Esad)*/
+
+.about{
+    padding: 90px 0 80px;
+    background: #fff;
+}
+
+/* titel */
+.about__title{
+    margin: 0 0 12px;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+}
+.about__title span{
+    color: #06f9b7;
+}
+
+/* intro tekst */
+.about__text{
+    margin: 0 0 55px;
+    max-width: 760px;
+    color: #6f6f6f;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* items rij */
+.about__items{
+    row-gap: 40px;
+}
+
+/* belangrijk: alles links zoals voorbeeld */
+.about-item{
+    text-align: left;
+}
+
+/* icoon + lijn naast elkaar */
+.about-item__top{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.about-item__icon{
+    font-size: 54px;
+    color: #222;
+}
+
+/* groene lijn */
+.about-item__line{
+    height: 4px;
+    width: 140px;
+    background: #06f9b7;
+    display: inline-block;
+}
+
+/* titels */
+.about-item__title{
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    color: #222;
+}
+
+/*    beschrijving: korter blokje */
+.about-item__desc{
+    margin: 0;
+    max-width: 240px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #222;
+}
+
+.about-item__desc a{
+    color: #06f9b7;
+    font-weight: 700;
+    text-decoration: none;
+}
+.about-item__desc a:hover{
+    text-decoration: underline;
+}
+
+/* rechter verticale tekst */
+.about__side{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about__vertical{
+    margin: 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+/* op kleinere schermen: verticale tekst onderaan en normaal */
+@media (max-width: 991px){
+    .about__side{
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    .about__vertical{
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
 }
