@@ -20,6 +20,13 @@ body{
     background-color: #f8fafa;
 }
 
+.Services i:first-child {
+    font-size: 30px;
+}
+
+.Services {
+    margin-top: 100px;
+}
 
 /* vanaf hier komt de css voor de section about ! (Esad)*/
 
@@ -29,7 +36,7 @@ body{
 }
 
 /* titel */
-.about__title{
+.about__title, .title{
     margin: 0 0 12px;
     font-size: 56px;
     font-weight: 800;
@@ -40,7 +47,7 @@ body{
 }
 
 /* intro tekst */
-.about__text{
+.about__text, .text{
     margin: 0 0 55px;
     max-width: 760px;
     color: #6f6f6f;
@@ -80,7 +87,7 @@ body{
 }
 
 /* titels */
-.about-item__title{
+.about-item__title , .subTitle{
     margin: 0 0 10px;
     font-size: 30px;
     font-weight: 800;
@@ -89,7 +96,7 @@ body{
 }
 
 /*    beschrijving: korter blokje */
-.about-item__desc{
+.about-item__desc, .ServicesDesc{
     margin: 0;
     max-width: 240px;
     font-size: 13px;
@@ -226,6 +233,16 @@ span {
     margin-top: 310px;
 }   
 
+.btnService {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
 @media (min-width: 1400px) {
     .blackBlok h1 {
     margin-top: 15%;
@@ -247,115 +264,4 @@ span {
     margin-left: -80px;
 }
 
-}
-/* vanaf hier komt de css voor de section about ! (Esad)*/
-
-.about{
-    padding: 90px 0 80px;
-    background: #fff;
-}
-
-/* titel */
-.about__title{
-    margin: 0 0 12px;
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1;
-}
-.about__title span{
-    color: #06f9b7;
-}
-
-/* intro tekst */
-.about__text{
-    margin: 0 0 55px;
-    max-width: 760px;
-    color: #6f6f6f;
-    line-height: 1.7;
-    font-size: 14px;
-}
-
-/* items rij */
-.about__items{
-    row-gap: 40px;
-}
-
-/* belangrijk: alles links zoals voorbeeld */
-.about-item{
-    text-align: left;
-}
-
-/* icoon + lijn naast elkaar */
-.about-item__top{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 18px;
-}
-
-.about-item__icon{
-    font-size: 54px;
-    color: #222;
-}
-
-/* groene lijn */
-.about-item__line{
-    height: 4px;
-    width: 140px;
-    background: #06f9b7;
-    display: inline-block;
-}
-
-/* titels */
-.about-item__title{
-    margin: 0 0 10px;
-    font-size: 30px;
-    font-weight: 800;
-    font-style: italic;
-    color: #222;
-}
-
-/*    beschrijving: korter blokje */
-.about-item__desc{
-    margin: 0;
-    max-width: 240px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #222;
-}
-
-.about-item__desc a{
-    color: #06f9b7;
-    font-weight: 700;
-    text-decoration: none;
-}
-.about-item__desc a:hover{
-    text-decoration: underline;
-}
-
-/* rechter verticale tekst */
-.about__side{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.about__vertical{
-    margin: 0;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #111;
-}
-
-/* op kleinere schermen: verticale tekst onderaan en normaal */
-@media (max-width: 991px){
-    .about__side{
-        justify-content: flex-start;
-        margin-top: 30px;
-    }
-    .about__vertical{
-        writing-mode: horizontal-tb;
-        transform: none;
-    }
 }
