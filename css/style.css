@@ -1,5 +1,11 @@
-@import "css/myFramework.css";
+@import "myFramework.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
 
 .bggroen {
    background-color: #06f9b7; 
@@ -11,4 +17,121 @@
 
 .bggrijsgrijs {
     background-color: #f8fafa;
+}
+
+.nav {
+    text-align: end;
+}
+
+.nav>a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:first-child, .header p {
+    color: #ffffff;
+}
+
+
+.header {
+    position: relative;
+    z-index: 10;
+}
+
+.heroSection {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    z-index: 10;
+}
+
+.header {
+    align-items: center;
+}
+
+.greenBlok {
+    width: 45%;
+    height: 50vh;
+    background-color: rgba(6, 249, 184, 0.600);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blackBlok {
+    width: 55%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.700);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+}
+
+.blackBlok h1 {
+    text-align: end;
+    margin-right: 15px;
+    margin-top: 41%;
+    color: #ffffff;
+}
+
+.greenBlok h1 {
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 50%;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin: 10px 0 0 15px;
+    cursor: pointer;
+    margin-left: 285px;
+}
+
+span {
+    color: #000000;
+    vertical-align: sub;
+}
+
+.uxui {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 310px;
+}   
+
+@media (min-width: 1400px) {
+    .blackBlok h1 {
+    margin-top: 15%;
+}
+
+.greenBlok h1 {
+    margin-top: 18.5%;
+}
+
+.uxui {
+    margin-top: 265px;
+}
+
+.btn {
+    margin-left: 85%;
+}
+
+.merk {
+    margin-left: -80px;
+}
+
 }
