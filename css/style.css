@@ -20,6 +20,13 @@ body{
     background-color: #f8fafa;
 }
 
+.Services i:first-child {
+    font-size: 30px;
+}
+
+.Services {
+    margin-top: 100px;
+}
 
 /* vanaf hier komt de css voor de section about ! (Esad)*/
 
@@ -29,7 +36,7 @@ body{
 }
 
 /* titel */
-.about__title{
+.about__title, .title{
     margin: 0 0 12px;
     font-size: 56px;
     font-weight: 800;
@@ -40,7 +47,7 @@ body{
 }
 
 /* intro tekst */
-.about__text{
+.about__text, .text{
     margin: 0 0 55px;
     max-width: 760px;
     color: #6f6f6f;
@@ -80,7 +87,7 @@ body{
 }
 
 /* titels */
-.about-item__title{
+.about-item__title , .subTitle{
     margin: 0 0 10px;
     font-size: 30px;
     font-weight: 800;
@@ -89,7 +96,7 @@ body{
 }
 
 /*    beschrijving: korter blokje */
-.about-item__desc{
+.about-item__desc, .ServicesDesc{
     margin: 0;
     max-width: 240px;
     font-size: 13px;
@@ -225,6 +232,16 @@ span {
     text-align: center;
     margin-top: 310px;
 }   
+
+.btnService {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+}
 
 @media (min-width: 1400px) {
     .blackBlok h1 {
