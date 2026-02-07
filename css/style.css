@@ -540,7 +540,7 @@ span {
 .contact__bg{
   background-image:
     linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-    url("../img/hero.jpg");
+    url("../img/hero.jpg"); 
   background-size: cover;
   background-position: center;
   padding: 120px 0 110px;
@@ -552,13 +552,13 @@ span {
   font-size: 60px;
   font-weight: 800;
   color: #fff;
-  text-shadow: 0 10px 25px rgba(0,0,0,.35);
 }
 
 .contact__title span{
   color: #06f9b7;
 }
 
+/* contact knop */
 .contact__btn{
   display: inline-flex;
   align-items: center;
@@ -601,19 +601,30 @@ span {
   font-weight: 800;
 }
 
-/* formulier */
 .contact-form{
   position: relative;
   background: #fff;
   padding: 90px 0 80px;
 }
 
-/* formulier center */
+/* center contact form(nieuwe class ook in index) */
+.contact-form__col{
+  grid-column: span 12;
+}
+
+@media (min-width: 992px){
+  .contact-form__col{
+    grid-column: 4 / span 6; 
+  }
+}
+
+/* form zelff */
 .form{
   max-width: 560px;
   margin: 0 auto;
 }
 
+/* input */
 .form__input{
   width: 100%;
   border: 0;
@@ -637,6 +648,7 @@ span {
   resize: none;
 }
 
+/* submit btn */
 .form__btn{
   margin-top: 28px;
   display: inline-flex;
@@ -666,7 +678,7 @@ span {
   display: inline-block;
 }
 
-/* scroll to top css */
+/* scroll to top deel */
 .scrollTop{
   position: absolute;
   right: 25px;
@@ -690,7 +702,7 @@ span {
   background: #06f9b7;
 }
 
-/* footer */
+
 .footer{
   background: #fff;
   padding: 22px 0 26px;
@@ -725,15 +737,10 @@ span {
   gap: 10px;
   font-weight: 800;
   font-size: 12px;
-  color: #111;
 }
 
 .footer__links a{
   text-decoration: none;
-  color: #111;
-}
-
-.footer__links span{
   color: #111;
 }
 
@@ -758,7 +765,7 @@ span {
   color: #06f9b7;
 }
 
-/* responsief gedeeelte csss */
+/* responsief deel */
 @media (max-width: 991px){
   .contact__title{ font-size: 44px; }
   .footer__right{
@@ -768,6 +775,9 @@ span {
   }
   .scrollTop{ display: none; }
 }
+
+
+
 
 
 
