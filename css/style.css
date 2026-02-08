@@ -245,11 +245,11 @@ span {
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 50%;
+    width: 55%;
 }
 
 .groenImgBox {
-    width: 50%;
+    width: 55%;
     height: 500px;
     background-color: rgba(6, 249, 184, 0.600);
     margin-bottom: -500px;
@@ -259,9 +259,46 @@ span {
 }
 
 .teContainer {
-    margin-top: -350px;
+    margin-top: -430px;
     z-index: 2;
     position: relative;
+}
+
+.titleBox {
+    grid-column: 9/13;
+    margin-bottom: 50px;
+
+}
+
+.moreBox {
+    background-color: #06f9b7;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+
+}
+
+.contentBox {
+    align-self: center;
+}
+
+.moreBtn {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+}
+
+.moreBtn>button {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
 }
 
 @media (min-width: 1400px) {
