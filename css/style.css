@@ -301,6 +301,20 @@ h2 {
     margin: auto;
 }
 
+.teTitle {
+    font-size: 30px;
+    
+}
+
+.teDesc {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.teAuthor {
+    font-size: 20px;
+}
+
 @media (min-width: 1400px) {
     .blackBlok h1 {
     margin-top: 15%;
