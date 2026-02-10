@@ -477,6 +477,7 @@ h2 {
 
 .portfolio{
     padding: 90px 0;
+    margin-top: 150px;
 }
 
 .portfolio-head{
@@ -492,10 +493,10 @@ h2 {
 
 .portfolio-line{
 
-
+    
     position: absolute;
     left: 0;
-    top: -30px;
+    top: -60px;
     width: 2px;
     height: 80px;
     background: #06f9b7;
@@ -631,6 +632,7 @@ h2 {
 
 .contact{
   background: #111;
+  margin-top: 150px;
 }
 
 .contact__bg{
