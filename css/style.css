@@ -575,34 +575,37 @@ h2 {
 
 }
 
-/* overlay */
-.portfolio-item.featured .overlay{
+/* overlay  */
 
-
+.overlay {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 249, 183, 0.400);
+}
+
+.schuin {
+    background-color: #06f9b7;
+    clip-path: polygon(0 74%, 100% 54%, 100% 100%, 0% 100%);
+    height: 65%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.link {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 18px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.portfolio-item.featured .overlay::before{
-    
-    position: absolute;
-    inset: auto 0 0 0;
-    height: 40%;
-    background: #06f9b7;
-}
 
-.portfolio-item.featured .overlay::after{
-    
-    position: absolute;
-    inset: auto 0 40% 0;
-    height: 30%;
-    background: rgba(6,249,183,0.35);
-    clip-path: polygon(0 100%, 100% 30%, 100% 100%, 0 100%);
-}
 
 /* tekst en btn */
 .overlay p{
